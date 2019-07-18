@@ -9,6 +9,8 @@ import { MatButtonModule, MatCheckboxModule } from '@angular/material';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import 'hammerjs';
 
+import { ParallaxModule, ParallaxConfig } from 'ngx-parallax';
+
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
@@ -18,6 +20,7 @@ import { RegistrationComponent } from './auth/registration/registration.componen
 import { LoginComponent } from './auth/login/login.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { HeroComponent } from './hero/hero.component';
 
 @NgModule({
   declarations: [
@@ -25,11 +28,13 @@ import { NavbarComponent } from './navbar/navbar.component';
     RegistrationComponent,
     LoginComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ParallaxModule,
     BrowserAnimationsModule,
     MatButtonModule, MatCheckboxModule,MatSidenavModule,
     AppRoutingModule,
