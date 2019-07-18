@@ -1,0 +1,22 @@
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav mode="over" [(opened)]="opened" >
+    Sidenav content
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <p><mat-checkbox [(ngModel)]="opened">&#x2715; sidenav.opened</mat-checkbox></p>
+    <p><button mat-button (click)="sidenav.toggle()">sidenav.toggle()</button></p>
+
+    
+
+
+<div class="container">
+	<app-navbar></app-navbar>
+  <h1>{{title}}</h1>
+  <router-outlet></router-outlet>
+</div>
+
+
+
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,9 @@
+<h4 class="mt-4">Home Page</h4>
+  
+<p *ngIf="user">Logged in as: {{ user?.email }} - {{ user?.displayName }}</p>
+
+<div *ngIf="user">cooL</div>
+
+<button class="" mat-button *ngIf="!user" (click)="register()">Register</button>
+<button class="" mat-button *ngIf="user" (click)="logout()">Logout</button>
+<button class="" mat-button *ngIf="!user" (click)="login()">Login</button>
