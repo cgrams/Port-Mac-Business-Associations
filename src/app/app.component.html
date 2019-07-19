@@ -4,14 +4,14 @@
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <p><mat-checkbox [(ngModel)]="opened">&#x2715; sidenav.opened</mat-checkbox></p>
-    <p><button mat-button (click)="sidenav.toggle()">sidenav.toggle()</button></p>
+    
 
     
 
 
 <div class="container">
-	<app-navbar></app-navbar>
+  <button mat-button class="mobileSideNav" (click)="sidenav.toggle()">&#x2715;</button>
+	<app-navbar class="navbarContainer"></app-navbar>
   <app-hero></app-hero>
   <h1>{{title}}</h1>
   <router-outlet></router-outlet>

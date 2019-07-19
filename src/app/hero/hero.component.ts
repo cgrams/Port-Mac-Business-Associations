@@ -14,12 +14,15 @@ export class HeroComponent implements OnInit {
 	
 	cardColor:any = 1;
 	scrollPositionNew:any;
-	transformSwing:any = {first:"30%", second: "20%"};
+	transformSwing:any = {first:"0%", second: "0%"};
+
+
+
 	@HostListener('window:scroll', ['$event']) 
 	    doSomething(event) {
 	    	const scrollPosition = window.pageYOffset;
-	    	this.scrollPositionNew = scrollPosition/100;
-	    	if(scrollPosition>100){ this.cardColor= this.scrollPositionNew ;console.log("cooldddd"); this.transformSwing.first = scrollPosition/3+"%";}
+	    	this.scrollPositionNew = scrollPosition/10;
+	    	this.cardColor= this.scrollPositionNew ;
 	    }
 
 }

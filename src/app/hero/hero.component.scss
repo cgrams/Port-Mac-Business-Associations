@@ -1,6 +1,62 @@
-.heroContainer{
-	height: 510px;
-	background-image: url(https://www.yourfamily.co.za/wp-content/uploads/2017/09/Meet-your-happy-hormones.jpg);
-	transform: rotate(90deg);
-	width: 300px;
+.heroContainer{}
+
+.heroPic1{
+ 
+	height: 604px;
+	background: #C6FFDD;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-repeat: no-repeat;
+	width: 100%;
+	grid-row-start: 1;
+	grid-row-end:1;
+	position: relative;
+	z-index: 1;
+}
+.heroPic2{
+	background-image: url(../../assets/hero/hero-image-skygone.png);
+	height: 750px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+	grid-row-start: 2;
+	grid-row-end:2;
+	position: relative;
+	top:-201px;
+	z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: top;	
+}
+svg {
+    overflow: visible;
+}
+
+section.heroContainer {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 364px 300px 300px;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+.delay-1s {
+  animation-delay: .5s;
 }

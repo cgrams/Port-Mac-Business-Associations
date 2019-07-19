@@ -1,0 +1,15 @@
+@media only screen and (min-width: 601px) {
+  .mobileSideNav {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .mobileSideNav {
+    display: block;
+  }
+}
+
+.navbarContainer {
+    position: fixed;
+    z-index: 3;
+}
