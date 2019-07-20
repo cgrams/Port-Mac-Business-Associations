@@ -1,11 +1,11 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import url('https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap');
+
 body {
     display: block;
     margin: 0px;
+	max-width: 100%;
+    overflow-x: hidden;    
 }
 
-*{
-	font-family: 'Darker Grotesque', sans-serif;
-
-}
+*{ font-family: 'Darker Grotesque', sans-serif; }
