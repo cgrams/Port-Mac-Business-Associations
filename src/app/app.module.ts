@@ -21,6 +21,7 @@ import { LoginComponent } from './auth/login/login.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeroComponent } from './hero/hero.component';
+import { ContentmajorComponent } from './contentmajor/contentmajor.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { HeroComponent } from './hero/hero.component';
     LoginComponent,
     HomeComponent,
     NavbarComponent,
-    HeroComponent
+    HeroComponent,
+    ContentmajorComponent
   ],
   imports: [
     BrowserModule,

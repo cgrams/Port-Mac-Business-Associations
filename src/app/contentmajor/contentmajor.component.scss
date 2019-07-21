@@ -1,0 +1,30 @@
+.contantMajorContainer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.boardConatiner {
+    display: grid;
+    grid-template-rows: 40% 60%;
+    grid-template-columns: 240px 240px;
+}
+
+.boardConatiner svg {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.boardConatiner h3 {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+
+    font-weight: bold;
+    font-size: 1.3em;
+    margin: 8px 0;
+
+
+}
