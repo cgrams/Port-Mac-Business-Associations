@@ -22,6 +22,7 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeroComponent } from './hero/hero.component';
 import { ContentmajorComponent } from './contentmajor/contentmajor.component';
+import { WhoweareComponent } from './whoweare/whoweare.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ContentmajorComponent } from './contentmajor/contentmajor.component';
     HomeComponent,
     NavbarComponent,
     HeroComponent,
-    ContentmajorComponent
+    ContentmajorComponent,
+    WhoweareComponent
   ],
   imports: [
     BrowserModule,

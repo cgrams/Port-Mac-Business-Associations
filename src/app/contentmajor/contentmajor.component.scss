@@ -6,7 +6,7 @@
 .boardConatiner {
     display: grid;
     grid-template-rows: 40% 60%;
-    grid-template-columns: 240px 240px;
+    grid-template-columns: 240px 200px;
 }
 
 .boardConatiner svg {
@@ -21,10 +21,13 @@
     grid-row-end: 2;
     grid-column-start: 2;
     grid-column-end: 2;
-
     font-weight: bold;
     font-size: 1.3em;
     margin: 8px 0;
+}
 
-
+article {
+    font-size: 20px;
+    margin: 0 10% 0 0;
+    text-align: justify;
 }

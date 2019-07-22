@@ -10,8 +10,9 @@
     <button mat-button class="mobileSideNav" (click)="sidenav.toggle()">&#x2715;</button>
   	<app-navbar class="navbarContainer" [style.background-color]="navBackgoundColorChange"></app-navbar>
     <app-hero></app-hero>
-    <div style="height: 3000px">
-      <app-contentmajor class="stickyContentM" [style.position]="stickyMajor"></app-contentmajor>
+    <div class="superContentContainer">
+      <app-contentmajor class="stickyContentM" [style.position]="stickyMajor" [style.display]="stickyMajor2"></app-contentmajor>
+      <app-whoweare></app-whoweare>
     </div>
     <router-outlet></router-outlet>
   </div>

@@ -17,10 +17,8 @@ export class AppComponent {
 	    	
 	    	if(scrollPosition>1){this.navBackgoundColorChange = "#ffffff8c";} else (this.navBackgoundColorChange = "#d2daf738")
 
-	    	if(scrollPosition>950){this.stickyMajor = "fixed";}
-	    		else if(scrollPosition<=951){
-	    			this.stickyMajor = "sticky";
-	    		}
+	    	if((scrollPosition>950) && (scrollPosition<3550)){this.stickyMajor = "fixed";}
+	    		else { this.stickyMajor = "sticky"; }
 	    }
 
 

@@ -14,9 +14,12 @@ export class ContentmajorComponent implements OnInit {
 	@HostListener('window:scroll', ['$event']) 
 		    contentEvents(event) {
 		    	const scrollPosition = window.pageYOffset;
-
-		    	if(scrollPosition>950){
+		    	const endOfAboutSection = 1950;
+		    	if((scrollPosition>950) &&(scrollPosition<endOfAboutSection)){
 					this.surfOpacity1 = ((scrollPosition-950) * .0041);
+					console.log(scrollPosition);
+		    	}else if (scrollPosition>(endOfAboutSection + 1) ){
+					this.surfOpacity1 = (1+( (endOfAboutSection - scrollPosition)/100 ));
 		    	} else if(scrollPosition<949){
 		    		this.surfOpacity1 = 0;
 		    	}
