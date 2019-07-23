@@ -19,7 +19,7 @@ export class ContentmajorComponent implements OnInit {
 					this.surfOpacity1 = ((scrollPosition-950) * .0041);
 					console.log(scrollPosition);
 		    	}else if (scrollPosition>(endOfAboutSection + 1) ){
-					this.surfOpacity1 = (1+( (endOfAboutSection - scrollPosition)/100 ));
+					this.surfOpacity1 = (1+( (endOfAboutSection - scrollPosition)/200 ));
 		    	} else if(scrollPosition<949){
 		    		this.surfOpacity1 = 0;
 		    	}

@@ -11,8 +11,9 @@
   	<app-navbar class="navbarContainer" [style.background-color]="navBackgoundColorChange"></app-navbar>
     <app-hero></app-hero>
     <div class="superContentContainer">
-      <app-contentmajor class="stickyContentM" [style.position]="stickyMajor" [style.display]="stickyMajor2"></app-contentmajor>
-      <app-whoweare></app-whoweare>
+      <app-contentmajor class="stickyContentM" [style.position]="stickyMajor" ></app-contentmajor>
+      <app-whoweare class="stickyContentM" [style.position]="stickyMajor2" ></app-whoweare> 
+
     </div>
     <router-outlet></router-outlet>
   </div>
