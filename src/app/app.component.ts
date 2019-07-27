@@ -10,7 +10,7 @@ export class AppComponent {
 	navBackgoundColorChange:string;
 	stickyMajor:string;
 	stickyMajor2:string;
-
+	stickyMajor3:string;
 	@HostListener('window:scroll', ['$event']) 
 	    contentEventsM(event) {
 	    	const scrollPosition = window.pageYOffset;
@@ -22,7 +22,10 @@ export class AppComponent {
 	    		else { this.stickyMajor = "sticky"; }
 	    	
 	    	if((scrollPosition>2250) && (scrollPosition<4550)){this.stickyMajor2 = "fixed";}
-	    		else { this.stickyMajor2 = "sticky"; }				    		
+	    		else { this.stickyMajor2 = "sticky"; }
+
+	    	if((scrollPosition>4550) && (scrollPosition<6550)){this.stickyMajor3 = "fixed";}
+	    		else { this.stickyMajor3 = "sticky"; }					    		
 	    }
 
 

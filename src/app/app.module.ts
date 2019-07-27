@@ -23,6 +23,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HeroComponent } from './hero/hero.component';
 import { ContentmajorComponent } from './contentmajor/contentmajor.component';
 import { WhoweareComponent } from './whoweare/whoweare.component';
+import { JoinComponent } from './join/join.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { WhoweareComponent } from './whoweare/whoweare.component';
     NavbarComponent,
     HeroComponent,
     ContentmajorComponent,
-    WhoweareComponent
+    WhoweareComponent,
+    JoinComponent
   ],
   imports: [
     BrowserModule,

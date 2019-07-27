@@ -1,0 +1,48 @@
+.whoWeAreContainer {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.whoWeAreContent {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.innerUsPic {
+    display: grid;
+    grid-template-columns: 100%;
+}
+video {
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+.companiesContainerField {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    margin-left:0px;
+    align-items: center;
+}
+fieldset {
+    height: 250px;
+    width: 80%;
+}
+h3 {
+    text-align: center;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    position: relative;
+    z-index: 5;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.4em;
+    bottom: 8%;
+}
