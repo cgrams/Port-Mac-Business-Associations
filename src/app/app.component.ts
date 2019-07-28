@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import { ScrollToService } from 'ng2-scroll-to-el';
 
 @Component({
   selector: 'app-root',
@@ -29,7 +30,9 @@ export class AppComponent {
 	    		else { this.stickyMajor3 = "sticky"; this.stickyMajor33 ="none";}					    		
 	    }
 
-
-
+	constructor(private scrollService: ScrollToService) {}
+scrollToTop(element) {
+        this.scrollService.scrollTo(element);
+    }
 
 }

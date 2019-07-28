@@ -8,10 +8,20 @@
 
   <div class="container">
     <button mat-button class="mobileSideNav" (click)="sidenav.toggle()">&#x2715;</button>
-  	<app-navbar class="navbarContainer" [style.background-color]="navBackgoundColorChange"></app-navbar>
+  	<div class="navbarContainer" [style.background-color]="navBackgoundColorChange">
+      <ul>
+        <li [scrollTo]="top" [scrollDuration]="1000" [scrollOffset]="+500">About</li>
+        <li [scrollTo]="companies" [scrollDuration]="2000" [scrollOffset]="+1000">Our Compnaies</li>
+        <li>Join</li>
+        <li>Members Section</li>
+      </ul>
+    </div>
+
     <app-hero></app-hero>
     <div class="superContentContainer">
+      <div #top></div>
       <app-contentmajor class="stickyContentM" [style.position]="stickyMajor" ></app-contentmajor>
+      <div #companies></div>
       <app-whoweare class="stickyContentM" [style.position]="stickyMajor2" ></app-whoweare> 
       <app-join class="stickyContentM" [style.position]="stickyMajor3" [style.display]="stickyMajor33"></app-join>
     </div>
