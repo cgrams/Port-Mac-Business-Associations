@@ -13,7 +13,9 @@ body {
 legend {
     text-align: center;
 }
-
+.fixNav{
+	height: 90vh;
+}
  
 legend {
     margin: 0;
@@ -22,4 +24,15 @@ legend {
 }
 fieldset{
 	height: 250px;
+}
+
+.contantMajorContainer {
+    height: 92vh;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+article {
+    font-size: 20px;
+    margin: 0 10% 0 0;
+    text-align: justify;
 }

@@ -1,0 +1,40 @@
+.boardConatiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.innerBoard{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px;
+}
+.fieldsetContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img.surferImage {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;    
+}
+ 
+
+.boardConatiner h3 {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    font-weight: bold;
+    font-size: 1.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 1px 1px 3px #000000;
+}
+ 

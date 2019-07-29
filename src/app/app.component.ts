@@ -13,6 +13,7 @@ export class AppComponent {
 	stickyMajor2:string;
 	stickyMajor3:string;
 	stickyMajor33:string ="none";
+	topNavFix:string = "30px";
 	@HostListener('window:scroll', ['$event']) 
 	    contentEventsM(event) {
 	    	const scrollPosition = window.pageYOffset;
@@ -20,10 +21,10 @@ export class AppComponent {
 	    	
 	    	if(scrollPosition>1){this.navBackgoundColorChange = "#ffffff8c";} else (this.navBackgoundColorChange = "#d2daf738")
 
-	    	if((scrollPosition>950) && (scrollPosition<2250)){this.stickyMajor = "fixed"; }
+	    	if((scrollPosition>950) && (scrollPosition<2250)){this.stickyMajor = "fixed";  }
 	    		else { this.stickyMajor = "sticky"; }
 	    	
-	    	if((scrollPosition>2250) && (scrollPosition<3450)){this.stickyMajor2 = "fixed";  }
+	    	if((scrollPosition>2250) && (scrollPosition<3450)){this.stickyMajor2 = "fixed"; }
 	    		else { this.stickyMajor2 = "sticky"; }
 
 	    	if((scrollPosition>3450) && (scrollPosition<5550)){this.stickyMajor3 = "fixed"; this.stickyMajor33 = "block";}
@@ -31,8 +32,7 @@ export class AppComponent {
 	    }
 
 	constructor(private scrollService: ScrollToService) {}
-scrollToTop(element) {
-        this.scrollService.scrollTo(element);
-    }
+	
+	scrollToTop(element) { this.scrollService.scrollTo(element); }
 
 }

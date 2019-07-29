@@ -1,6 +1,11 @@
 <mat-sidenav-container class="example-container">
-  <mat-sidenav #sidenav mode="over" >
-    Sidenav content
+  <mat-sidenav #sidenav mode="over" (click)="sidenav.toggle()">
+      <ul>
+        <li [scrollTo]="top" [scrollDuration]="1000" [scrollOffset]="+500">About</li>
+        <li [scrollTo]="companies" [scrollDuration]="1000" [scrollOffset]="+1500">Our Compnaies</li>
+        <li [scrollTo]="join" [scrollDuration]="1000" [scrollOffset]="+2500">Join</li>
+        <li>Members Section</li>
+      </ul>
   </mat-sidenav>
 
   <mat-sidenav-content>
@@ -11,8 +16,8 @@
   	<div class="navbarContainer" [style.background-color]="navBackgoundColorChange">
       <ul>
         <li [scrollTo]="top" [scrollDuration]="1000" [scrollOffset]="+500">About</li>
-        <li [scrollTo]="companies" [scrollDuration]="2000" [scrollOffset]="+1000">Our Compnaies</li>
-        <li>Join</li>
+        <li [scrollTo]="companies" [scrollDuration]="1000" [scrollOffset]="+1500">Our Compnaies</li>
+        <li [scrollTo]="join" [scrollDuration]="1000" [scrollOffset]="+2500">Join</li>
         <li>Members Section</li>
       </ul>
     </div>
@@ -20,10 +25,11 @@
     <app-hero></app-hero>
     <div class="superContentContainer">
       <div #top></div>
-      <app-contentmajor class="stickyContentM" [style.position]="stickyMajor" ></app-contentmajor>
+      <app-contentmajor class="stickyContentM" [style.position]="stickyMajor" [style.top]="topNavFix" ></app-contentmajor>
       <div #companies></div>
-      <app-whoweare class="stickyContentM" [style.position]="stickyMajor2" ></app-whoweare> 
-      <app-join class="stickyContentM" [style.position]="stickyMajor3" [style.display]="stickyMajor33"></app-join>
+      <app-whoweare class="stickyContentM" [style.position]="stickyMajor2" [style.top]="topNavFix" ></app-whoweare> 
+      <div #join></div>
+      <app-join class="stickyContentM" [style.position]="stickyMajor3" [style.display]="stickyMajor33" [style.top]="topNavFix" ></app-join>
     </div>
     <router-outlet></router-outlet>
   </div>

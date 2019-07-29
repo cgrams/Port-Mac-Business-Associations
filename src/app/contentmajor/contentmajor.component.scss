@@ -1,8 +1,3 @@
-.contantMajorContainer {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 30% 70%;
-}
 .boardConatiner {
     display: flex;
     justify-content: center;
@@ -43,10 +38,3 @@ img.surferImage {
     text-shadow: 1px 1px 3px #000000;
 }
  
-
-
-article {
-    font-size: 20px;
-    margin: 0 10% 0 0;
-    text-align: justify;
-}
