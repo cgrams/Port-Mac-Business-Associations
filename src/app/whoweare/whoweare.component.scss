@@ -1,19 +1,11 @@
 
-.boardConatiner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .innerBoard{
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 250px;
 }
-.fieldsetContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+ 
 img.surferImage {
     grid-column-start: 1;
     grid-column-end: 1;

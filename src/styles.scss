@@ -1,5 +1,6 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import url('https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sofia&display=swap');
 
 body {
     display: block;
@@ -25,7 +26,17 @@ legend {
 fieldset{
 	height: 250px;
 }
+.boardConatiner {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
 
+.fieldsetContainer {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
 .contantMajorContainer {
     height: 92vh;
     display: grid;
@@ -33,6 +44,17 @@ fieldset{
 }
 article {
     font-size: 20px;
-    margin: 0 10% 0 0;
+    margin: 0 0 0 0;
     text-align: justify;
+}
+
+article:first-letter {
+    color: #305263;
+    font-family: Sofia, cursive;
+    font-size: 2em;
+    float: left;
+    line-height: 0.1;
+    padding: 0;
+    margin: 10px -4px 0 -15px;
+    text-shadow: 2px 2px #dbdae8;
 }

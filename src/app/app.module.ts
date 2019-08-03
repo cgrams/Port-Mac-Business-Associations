@@ -27,6 +27,8 @@ import { HeroComponent } from './hero/hero.component';
 import { ContentmajorComponent } from './contentmajor/contentmajor.component';
 import { WhoweareComponent } from './whoweare/whoweare.component';
 import { JoinComponent } from './join/join.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+
 
 @NgModule({
   declarations: [
@@ -50,7 +52,8 @@ import { JoinComponent } from './join/join.component';
     AngularFireModule.initializeApp( environment.firebase),
     AngularFireAuthModule,
     AngularFirestoreModule,
-    ScrollToModule.forRoot()
+    ScrollToModule.forRoot(),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]

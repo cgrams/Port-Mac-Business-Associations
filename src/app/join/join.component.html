@@ -2,7 +2,7 @@
 
   <div class="boardConatiner" [style.opacity]="joinfOpacity1">
   	<div class="innerBoard">
-	  <img class="surferImage" src="../assets/SurfCin2.gif" width="400px" />
+	  <img *ngIf="joinLaz" class="surferImage" src="../assets/whales.gif" width="100%" />
 	  <h3>Join</h3>
 	</div>
   </div>
@@ -15,3 +15,5 @@
 		</fieldset>
 	</div>
 </div>
+
+
