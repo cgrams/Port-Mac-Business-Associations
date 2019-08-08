@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
- 
 import { ScrollToModule } from 'ng2-scroll-to-el';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -29,7 +28,6 @@ import { WhoweareComponent } from './whoweare/whoweare.component';
 import { JoinComponent } from './join/join.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,11 +47,11 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     BrowserAnimationsModule,
     MatButtonModule, MatCheckboxModule,MatSidenavModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp( environment.firebase),
+    AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFirestoreModule,
     ScrollToModule.forRoot(),
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    ServiceWorkerModule.register('ngsw-worker.js', {enabled: environment.production})
   ],
   providers: [],
   bootstrap: [AppComponent]

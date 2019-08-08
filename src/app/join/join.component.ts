@@ -19,7 +19,6 @@ export class JoinComponent implements OnInit {
 		    	const endOfJoinSection = 6000;
 		    	if((scrollPosition>3550) &&(scrollPosition<endOfJoinSection)){
 					this.joinfOpacity1 = ((scrollPosition-3550) * .0041);
-					
 					this.joinLaz = true;
 		    	}else if (scrollPosition>(endOfJoinSection + 1) ){
 					this.joinfOpacity1 = (1+( (endOfJoinSection - scrollPosition)/200 ));

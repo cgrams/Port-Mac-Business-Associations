@@ -25,6 +25,7 @@ legend {
 }
 fieldset{
 	height: 250px;
+    margin: 0;
 }
 .boardConatiner {
     display: flex;
@@ -44,8 +45,10 @@ fieldset{
 }
 article {
     font-size: 20px;
-    margin: 0 0 0 0;
+    margin: 0 0 0 10px;
     text-align: justify;
+    z-index: 1;
+    position: relative;    
 }
 
 article:first-letter {
@@ -57,4 +60,27 @@ article:first-letter {
     padding: 0;
     margin: 10px -4px 0 -15px;
     text-shadow: 2px 2px #dbdae8;
+}
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+h3 {
+    position: relative;
 }
